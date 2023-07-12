@@ -114,6 +114,28 @@ console.log(name, profession); // Вывод: John Unknown
 */
 
 
+/*
+В случае деструктуризации объектов с одинаковым содержимым, необходимо задать разные названия для
+параметров которые мы вытаскиваем
+*/
+
+const obj1 = {
+  name: "John",
+  age: 18
+}
+
+const obj2 = {
+  name: "Naomi",
+  age: 19
+}
+
+let { name: obj1Name, age: obj1Age } = obj1;
+let { name: obj2Name, age: obj2Age } = obj2;
+
+console.log(obj1Name, obj1Age);
+console.log(obj2Name, obj2Age);
+
+
 
 
 
